@@ -80,14 +80,12 @@
       z-index: 1;
     }
 
-    /* HEADER CENTRALIZADO */
+    /* HEADER: FOTO ESQUERDA, TEXTO DIREITA */
     .header {
       display: flex;
-      flex-direction: column;
       align-items: center;
-      gap: 1rem;
+      gap: 1.25rem;
       margin-bottom: 1.5rem;
-      text-align: center;
     }
 
     .avatar-wrapper {
@@ -97,6 +95,7 @@
       border-radius: 50%;
       padding: 2px;
       background-image: linear-gradient(135deg, rgba(148,163,184,0.5), transparent 55%);
+      flex-shrink: 0;
     }
 
     .avatar {
@@ -115,7 +114,8 @@
     }
 
     .title-block {
-      text-align: center;
+      text-align: left;
+      flex: 1;
     }
 
     .title-block h1 {
@@ -149,12 +149,13 @@
       background: var(--accent-alt);
     }
 
+    /* BADGES ALINHADOS À ESQUERDA */
     .badge-row {
       display: flex;
       flex-wrap: wrap;
       gap: 0.4rem;
       margin-bottom: 1.2rem;
-      justify-content: center;
+      justify-content: flex-start;
     }
 
     .badge {
@@ -175,6 +176,7 @@
       color: var(--accent-alt);
     }
 
+    /* BIO CENTRALIZADA */
     .bio {
       font-size: 0.86rem;
       line-height: 1.5;
@@ -444,7 +446,7 @@
     </section>
 
     <footer class="footer">
-      © <strong>Plugo.ia</strong>
+      © Plugo.ia</strong>
       <span>Automações com IA • Litoral SC</span>
     </footer>
   </main>
