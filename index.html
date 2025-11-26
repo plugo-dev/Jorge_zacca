@@ -16,10 +16,8 @@
     :root {
       --bg: #020617;
       --bg-soft: #030712;
-      --card: #020617;
       --card-border: rgba(148, 163, 184, 0.4);
       --accent: #1e3a8a;
-      --accent-soft: #1d4ed8;
       --accent-alt: #84cc16;
       --text: #e5e7eb;
       --muted: #9ca3af;
@@ -82,11 +80,14 @@
       z-index: 1;
     }
 
+    /* HEADER CENTRALIZADO */
     .header {
       display: flex;
+      flex-direction: column;
       align-items: center;
-      gap: 1.25rem;
+      gap: 1rem;
       margin-bottom: 1.5rem;
+      text-align: center;
     }
 
     .avatar-wrapper {
@@ -113,35 +114,19 @@
       display: block;
     }
 
-    .status-pill {
-      position: absolute;
-      bottom: -4px;
-      right: -2px;
-      padding: 0.2rem 0.65rem;
-      font-size: 0.65rem;
-      border-radius: var(--radius-pill);
-      background: rgba(22,163,74,0.12);
-      border: 1px solid rgba(34,197,94,0.8);
-      color: #bbf7d0;
-      display: flex;
-      align-items: center;
-      gap: 0.3rem;
-      backdrop-filter: blur(8px);
-    }
-
-    .status-pill i {
-      font-size: 0.8rem;
+    .title-block {
+      text-align: center;
     }
 
     .title-block h1 {
-      font-size: 1.25rem;
+      font-size: 1.35rem;
       letter-spacing: 0.03em;
       font-weight: 600;
     }
 
     .title-block .role {
       margin-top: 0.15rem;
-      font-size: 0.82rem;
+      font-size: 0.86rem;
       color: var(--muted);
     }
 
@@ -169,6 +154,7 @@
       flex-wrap: wrap;
       gap: 0.4rem;
       margin-bottom: 1.2rem;
+      justify-content: center;
     }
 
     .badge {
@@ -194,6 +180,7 @@
       line-height: 1.5;
       color: #d1d5db;
       margin-bottom: 1.3rem;
+      text-align: center;
     }
 
     .bio strong {
@@ -226,7 +213,6 @@
       background: var(--accent-alt);
     }
 
-    /* GRID DE BOTÕES – SEMPRE EM COLUNA, CENTRALIZADO (MOBILE FIRST) */
     .buttons-grid {
       display: flex;
       flex-direction: column;
@@ -254,7 +240,7 @@
       cursor: pointer;
       overflow: hidden;
       transition: border-color 0.18s ease, background 0.18s ease, transform 0.12s ease, box-shadow 0.12s ease;
-      width: 100%; /* ocupa toda a largura da coluna */
+      width: 100%;
     }
 
     .btn span.label {
@@ -342,10 +328,6 @@
               <div class="avatar">
                 <img src="Jorge.png" alt="Jorge Zacca" />
               </div>
-              <div class="status-pill">
-                <i class="ri-shield-check-fill"></i>
-                Ativo no mercado
-              </div>
             </div>
 
             <div class="title-block">
@@ -416,19 +398,19 @@
             </a>
           </div>
 
-          <!-- CANAIS OFICIAIS DA IMOB -->
+          <!-- CANAIS OFICIAIS DA ZACCA IMOBILIÁRIA -->
           <div class="section-label" style="margin-top: 1.1rem;">
             <span class="dot"></span>
             CANAIS OFICIAIS DA ZACCA IMOBILIÁRIA
           </div>
           <div class="buttons-grid">
             <a
-              class="btn btn-primary"
+              class="btn btn-whatsapp"
               href="https://wa.me/5548992091070"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i class="ri-chat-1-line"></i>
+              <i class="ri-whatsapp-line"></i>
               <span class="label">WhatsApp Imobiliária</span>
             </a>
 
