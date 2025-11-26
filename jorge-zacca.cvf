@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Jorge Zacca
+N:Zacca;Jorge;;;
+ORG:Zacca imóveis
+TITLE:Empresário e CEO
+TEL;TYPE=CELL,VOICE:048999951396
+EMAIL;TYPE=INTERNET,PREF:jorge-zacca@icloud.com
+URL:https://www.zaccaimoveis.com.br
+END:VCARD
