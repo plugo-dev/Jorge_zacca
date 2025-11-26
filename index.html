@@ -93,8 +93,9 @@
       width: 92px;
       height: 92px;
       border-radius: 50%;
-      padding: 2px;
-      background-image: linear-gradient(135deg, rgba(148,163,184,0.5), transparent 55%);
+      padding: 3px;
+      background: linear-gradient(135deg, #22d3ee, #6366f1, #22c55e);
+      box-shadow: 0 0 18px rgba(56,189,248,0.35);
       flex-shrink: 0;
     }
 
@@ -272,6 +273,13 @@
       box-shadow: 0 12px 30px rgba(22,163,74,0.55);
     }
 
+    .btn-google {
+      border-color: rgba(250,204,21,0.9);
+      background: radial-gradient(circle at top left, #facc15, #854d0e 75%);
+      color: #fefce8;
+      box-shadow: 0 12px 30px rgba(234,179,8,0.45);
+    }
+
     .btn:hover {
       transform: translateY(-1px);
       box-shadow: 0 16px 38px rgba(15,23,42,0.9);
@@ -280,6 +288,10 @@
 
     .btn-whatsapp:hover {
       box-shadow: 0 16px 38px rgba(22,163,74,0.75);
+    }
+
+    .btn-google:hover {
+      box-shadow: 0 16px 38px rgba(234,179,8,0.75);
     }
 
     .subtext {
@@ -358,9 +370,10 @@
           </div>
 
           <p class="bio">
-            À frente da <strong>Zacca Imobiliária</strong>, Jorge Zacca conecta famílias e investidores
-            aos melhores imóveis de Sombrio, Balneário Gaivota, Passo de Torres e região — sempre com
-            transparência, segurança jurídica e atendimento próximo.
+            No comando da <strong>Zacca Imobiliária</strong> há mais de 14 anos, Jorge Zacca consolidou
+            uma trajetória sólida conectando famílias e investidores aos melhores imóveis da região —
+            com análise responsável, processos seguros e uma relação de confiança que permanece muito
+            além da assinatura do contrato.
           </p>
 
           <div class="divider"></div>
@@ -417,6 +430,16 @@
             </a>
 
             <a
+              class="btn btn-google"
+              href="https://www.google.com/search?sca_esv=7cb5a2c0938f91b5&sxsrf=AE3TifO5AUbPgciyNrtVDf-Cc0D7NVg9SA:1764182737786&si=AMgyJEuzsz2NflaaWzrzdpjxXXRaJ2hfdMsbe_mSWso6src8szUSaPOjhWpkDfIGTbHUi-JoSNNopmAUYnTHECWy6_mvjQMC6ibuWAFuxl11h00oQ3cKq3lycRQd0YbB54Lb4FZzWLnnijbwzRa_XE2ky_9j1CAETw%3D%3D&q=Zacca+Imobili%C3%A1ria+Coment%C3%A1rios&sa=X&ved=2ahUKEwiwjZ7rvJCRAxVNr5UCHZJRJIwQ0bkNegQINxAE&biw=1710&bih=981&dpr=2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="ri-google-fill"></i>
+              <span class="label">Avalie no Google</span>
+            </a>
+
+            <a
               class="btn btn-outline"
               href="https://www.zaccaimoveis.com.br/"
               target="_blank"
@@ -438,7 +461,7 @@
           </div>
 
           <p class="subtext">
-            Atuação focada em <strong>Sombrio, Balneário Gaivota, Passo de Torres</strong> e região.
+            Atuação focada em <strong>Sombrio, Balneário Gaivota e região.
             Imóveis residenciais, comerciais, terrenos e oportunidades para investidores.
           </p>
         </div>
